@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".single_movie_detail.SingleMovieActivity"></activity>
         <activity android:name=".MovieDetail.MovieDetailActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".PopularMovie.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

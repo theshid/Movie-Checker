@@ -30,7 +30,7 @@ class SingleMovieActivity : AppCompatActivity() {
 
         val apiService : MovieInterface = MovieClient.getClient()
         movieRepository = MovieDetailsRepository(apiService)
-
+        viewModel = getViewModel(movieId)
         viewModel.movieDetails.observe(this, Observer{
             bindUI(it)
         })
